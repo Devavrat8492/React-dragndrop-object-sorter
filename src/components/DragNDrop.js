@@ -37,8 +37,6 @@ function DragNDrop({data}){
         console.log('Ending drag..');
         setDragging(false);
         dragItem.current = null;
-        // dragItemNode.current.removeEventListener('dragend', handleDragEnd)
-        // dragItemNode.current = null;
     }
 
    
@@ -60,11 +58,11 @@ function DragNDrop({data}){
                 ))}
               </div>
             ))}
-            <div>
-                Total Items {list[0].items.length}
+            <div id="counter_1">
+                Total Items <div data-testid="counter_1">{list[0].items.length}</div>
             </div>
-            <div>
-                Total Items {list[1].items.length}
+            <div id="counter_2">
+                Total Items <div data-testid="counter_2">{list[1].items.length}</div>
             </div>
       </div>
     )
