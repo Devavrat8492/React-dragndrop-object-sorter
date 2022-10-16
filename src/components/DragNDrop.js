@@ -61,10 +61,10 @@ function DragNDrop({data}){
               </div>
             ))}
             <div>
-                {list[0].items.length}
+                Total Items {list[0].items.length}
             </div>
             <div>
-                {list[1].items.length}
+                Total Items {list[1].items.length}
             </div>
       </div>
     )
